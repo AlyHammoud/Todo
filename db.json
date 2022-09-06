@@ -1,0 +1,29 @@
+{
+  "projects": [
+    {
+      "project_name": "Tutorials to get",
+      "project_description": "Original",
+      "created_at": "9/6/2022",
+      "due_to": "2022-12-31",
+      "updated_at": null,
+      "id": 1
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "projectId": 1,
+      "todo": [
+        {
+          "name": "Laravel",
+          "data": []
+        }
+      ],
+      "created_at": null,
+      "updated_at": "9/6/2022",
+      "depricate": [
+        []
+      ]
+    }
+  ]
+}
