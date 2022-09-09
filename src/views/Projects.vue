@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style="{ zoom: storeProjects.zoom }">
     <div class="project-create flexCenter">
       <router-link :to="{ name: 'CreateProject' }"
         ><p class="box-shadow">Create</p></router-link

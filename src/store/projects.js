@@ -12,6 +12,7 @@ export const useProjectsStore = defineStore("projects", {
       id: null,
       projectName: "",
     },
+    zoom: 1,
 
     //End of State
   }),
@@ -38,12 +39,12 @@ export const useProjectsStore = defineStore("projects", {
           ...projectData,
         })
         .then(({ data }) => {
-          this.projects.push(data)
+          this.projects.push(data);
           this.project = data;
         });
     },
 
-    async getProjectById(id){
+    async getProjectById(id) {
       return axiosClient
         .get(`${import.meta.env.VITE_BASE_URL}/projects/${id}`)
         .then(({ data }) => {
@@ -51,9 +52,9 @@ export const useProjectsStore = defineStore("projects", {
         });
     },
 
-    async updateProject(id, projectData){
+    async updateProject(id, projectData) {
       return axiosClient
-        .put(import.meta.env.VITE_BASE_URL + "/projects/"+id, {
+        .put(import.meta.env.VITE_BASE_URL + "/projects/" + id, {
           ...projectData,
         })
         .then(({ data }) => {
@@ -61,11 +62,11 @@ export const useProjectsStore = defineStore("projects", {
         });
     },
 
-    async deleteProject(id){
-      return axiosClient.delete(
-        import.meta.env.VITE_BASE_URL + "/projects/" + id
-      ).then(() => true );
-    }
+    async deleteProject(id) {
+      return axiosClient
+        .delete(import.meta.env.VITE_BASE_URL + "/projects/" + id)
+        .then(() => true);
+    },
 
     //End of Actions
   },

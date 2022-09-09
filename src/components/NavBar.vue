@@ -13,6 +13,14 @@
       @click="storeProjects.openEditModel = false"
     >
       <nav class="nav flex align-center">
+        <input
+          type="range"
+          min="30"
+          max="100"
+          v-model="zoomPage"
+          @input="storeProjects.zoom = (130 - zoomPage) / 100"
+        />
+
         <div class="logo flexCenter">
           <router-link to="/" class="icon-wrapper flexCenter"
             ><div class="icon-wrapper flexCenter">
@@ -183,6 +191,8 @@ const searchTodo = ref([]);
 const noTodoFound = ref(null);
 const emtpyTodo = ref([]);
 
+const zoomPage = ref(1)
+
 onMounted(async () => {
   if (!storeProjects.projects) {
     await storeProjects.getAllProjects();
@@ -224,23 +234,6 @@ watch(search, async (newVal) => {
     searchTodo.value = [];
   }
 
-  // searchTodo.value.forEach((todos, i) => {
-  //   todos.todo.filter((filterTodo, y) => {
-  //     emtpyTodo.value[i] = [];
-  //     if (filterTodo.length) {
-  //       emtpyTodo.value[i].push(y);
-  //     }
-  //   });
-  // });
-
-  // noTodoFound.value = emtpyTodo.value.every((allFalse) => {
-  //   // if all are empty
-  //   return allFalse.length == 0;
-  // });
-
-  // console.log(noTodoFound.value);
-  // console.log(emtpyTodo.value);
-
   document.querySelector("body").style.overflowY =
     searchTodo.value.length || searchProject.value.length || search.value
       ? "hidden"
@@ -248,7 +241,7 @@ watch(search, async (newVal) => {
 });
 </script>
 
-<style>
+<style scoped>
 /* Search Content */
 .search-content {
   position: fixed;

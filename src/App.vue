@@ -26,6 +26,10 @@ onMounted(() => {
 const goUp = () => {
   window.scrollTo(0, 0);
 };
+
+const zoomPage = (num) => {
+  zoomTo.value = num / 100;
+};
 </script>
 
 <style>
@@ -57,5 +61,16 @@ const goUp = () => {
   100% {
     transform: translateY(0);
   }
+}
+
+input[type="text"] {
+  width: 22rem;
+  height: 2rem;
+  padding: 1px 10px;
+  color: gray;
+  outline: none;
+  box-shadow: 1px 4px 10px black;
+  border-radius: 4px;
+  border: none;
 }
 </style>

@@ -38,7 +38,7 @@ import { useTodosStore } from "../store/todos";
 import useVuelidate from "@vuelidate/core";
 import { required, helpers, minLength } from "@vuelidate/validators";
 
-const addCategory = ref(""); // vmodel
+const addCategory = ref(null); // vmodel
 
 const categoryInput = ref(null); //ref for focus the add input
 
@@ -84,12 +84,12 @@ onBeforeUnmount(() => (document.querySelector("body").style.overflow = "auto"));
 const storeTodo = useTodosStore();
 
 const manageCategory = async () => {
-  const validated = await v$.value.$validate();
-  
+  const validated = await v$.value.addCategory.$validate();
+  console.log(editMode, validated)
   if (!editMode && validated) {
     //then it is adding new one
     emit("addCategory", addCategory.value);
-  } else {
+  } else if(editMode && validated){
     emit("editCategory", addCategory.value)
   }
 };
