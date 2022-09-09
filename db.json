@@ -15,6 +15,14 @@
       "due_to": "2022-12-01",
       "updated_at": null,
       "id": 2
+    },
+    {
+      "project_name": "Flutter",
+      "project_description": "First Flutter tutorial and installation",
+      "created_at": "9/9/2022",
+      "due_to": "2022-09-25",
+      "updated_at": null,
+      "id": 3
     }
   ],
   "todos": [
@@ -60,7 +68,7 @@
           "data": [
             "<p><span style=\"font-size: 18pt;\"><strong><span style=\"color: #ba372a;\">Vite and Nuxt:</span></strong></span></p>\n<p>https://www.youtube.com/watch?v=R1CdPTLaxas</p>",
             "<p><span style=\"color: #e03e2d; font-size: 18pt;\">laravel packages to run nuxt:</span></p>\n<ol>\n<li>https://dev.to/skyrpex/create-a-spa-with-laravel-and-nuxt--54k</li>\n<li>https://medium.com/vue-mastery/10-reasons-to-use-nuxt-js-for-your-next-web-application-522397c9366b</li>\n</ol>",
-https://searchengineland.com/tested-googlebot-crawls-javascript-heres-learned-220157
+            "<p><span style=\"color: #ffffff; background-color: #ba372a;\"><strong>SEO js crawls</strong></span></p>\n<p>https://searchengineland.com/tested-googlebot-crawls-javascript-heres-learned-220157</p>"
           ]
         },
         {
@@ -74,6 +82,23 @@ https://searchengineland.com/tested-googlebot-crawls-javascript-heres-learned-22
       "updated_at": "9/9/2022",
       "depricate": [
         [],
+        []
+      ]
+    },
+    {
+      "id": 3,
+      "projectId": 3,
+      "todo": [
+        {
+          "name": "Installation",
+          "data": [
+            "<p style=\"text-align: center;\"><strong><span style=\"color: #e03e2d;\">Installation</span></strong></p>\n<p style=\"text-align: left;\">&nbsp;</p>\n<ol>\n<li style=\"text-align: left;\"><strong>https://flutter.dev/</strong></li>\n<li style=\"text-align: left;\"><strong>get started</strong></li>\n<li style=\"text-align: left;\"><strong>download git for windows if not isntalled&nbsp;</strong></li>\n<li style=\"text-align: left;\"><strong>download SDK&nbsp; -&gt; 1GB</strong></li>\n<li style=\"text-align: left;\"><strong>extract the sdk into path not name with spaces and special characters and not in c:/programs and files</strong></li>\n<li style=\"text-align: left;\"><strong>for example: this pc/documents/flutterDev</strong></li>\n<li style=\"text-align: left;\"><strong>enter flutterDev/&nbsp; ----&gt; find <span style=\"color: #ba372a;\">flutter_console</span></strong></li>\n<li style=\"text-align: left;\"><strong>run: flutter doctor</strong></li>\n<li style=\"text-align: left;\"><strong>this downloads and&nbsp; installs flutter into computer</strong></li>\n<li style=\"text-align: left;\"><strong>then: start-&gt;search (edit the envirnoment variables)</strong></li>\n<li style=\"text-align: left;\"><strong>click on <span style=\"color: #ba372a;\">path&nbsp;</span></strong></li>\n<li style=\"text-align: left;\"><strong>then click: <span style=\"color: #ba372a;\">edit -&gt; new</span></strong></li>\n<li style=\"text-align: left;\"><strong>in flutterDev: <span style=\"color: #ba372a;\">press shift + right click</span> on <span style=\"color: #ba372a;\">bin </span>folder to <span style=\"color: #ba372a;\">copy the path</span></strong></li>\n<li style=\"text-align: left;\"><strong>paste it as a new variable (remove the qoutations)</strong></li>\n<li style=\"text-align: left;\"><strong>now flutter is accessible from anywhere from the computer</strong></li>\n<li style=\"text-align: left;\"><strong>now if you open terminal and type flutter doctor ( will execute flutter with green check mark on flutter that it worked correctly)</strong></li>\n</ol>"
+          ]
+        }
+      ],
+      "created_at": null,
+      "updated_at": "9/10/2022",
+      "depricate": [
         []
       ]
     }
