@@ -27,8 +27,12 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.full-screen-wrapper{
+  width: 100%;
+}
 .full-screen-text {
   position: fixed;
+  width: 100%;
   top: 78px;
   left: 0;
   height: calc(100vh - 78px);
@@ -53,4 +57,33 @@ onMounted(() => {
   border: 1px solid #fff;
   border-radius: 50%;
 }
+
+
+
+
+
+.full-screen-text span ul,
+.full-screen-text span ol {
+  margin-left: 20px;
+}
+
+.full-screen-text span ul li,
+.full-screen-text span ol li {
+  margin: 10px 25px;
+}
+
+.full-screen-text p ul {
+  list-style: disc;
+}
+
+.full-screen-text span p {
+  padding: 5px;
+  letter-spacing: 1.2px;
+  word-break: break-all;
+}
+
+.full-screen-text span p img {
+  max-width: 70%;
+}
+
 </style>

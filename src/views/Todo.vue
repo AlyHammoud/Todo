@@ -1377,7 +1377,7 @@ span[id^="todo-item-text"] ol li {
 }
 
 p[id^="todo-item-text"] ul {
-  list-style: disc;
+  /*list-style: disc;*/
 }
 
 span[id^="todo-item-text"] p {
